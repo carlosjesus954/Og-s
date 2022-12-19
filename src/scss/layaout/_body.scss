@@ -1,0 +1,264 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.header {
+  position: fixed;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: v.$colorPrincipal;
+  padding: 1rem;
+  // @include m.flex(row wrap, space-between, center, 1rem);
+  &__global {
+    @include m.flex(row nowrap, space-between, center, 1rem);
+    width: 100%;
+    position: relative;
+  }
+  &__btns {
+    @include m.flex(row wrap, start, center, 1rem);
+    z-index: 2;
+  }
+  &__toggle {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    cursor: pointer;
+  }
+  &__logo {
+    width: 3rem;
+  }
+  &__container {
+    padding: 1rem;
+    @include m.flex(row nowrap, space-between, center, 2rem);
+  }
+}
+.nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -120%;
+  z-index: 1;
+  transition: all 0.5s ease;
+
+  &__global {
+    @include m.flex(column nowrap, space-between, start, 1rem);
+    width: 11rem;
+    padding: 1rem;
+    background-color: v.$colorPrincipal;
+    height: 100vh;
+    overflow: hidden auto;
+    @include m.desktopL {
+      width: 17rem;
+    }
+  }
+  &__demilitador {
+    background-color: transparent;
+    width: 10rem;
+    height: 5.5rem;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  &__ul {
+    padding: 0;
+    @include m.flex(column wrap, start, start, 1rem);
+    margin-top: 7rem;
+  }
+
+  &__link {
+    font-weight: lighter;
+    color: v.$colorLetra;
+    font-size: 0.8rem;
+    @include m.desktopL {
+      font-size: 1.1rem;
+    }
+  }
+  &__link--bolder {
+    font-weight: bolder;
+    font-size: 1.4rem;
+  }
+  &__link--important {
+    font-weight: bolder;
+    font-size: 1.4rem;
+  }
+  &__margin--top {
+    margin-top: 1.2rem;
+  }
+  &__container {
+    @include m.flex(column wrap, start, start, 1rem);
+  }
+  &__subcontainer {
+    @include m.flex(row wrap, space-around, center, 0.7rem);
+    padding-bottom: 1rem;
+  }
+  &__text {
+    font-size: 0.8rem;
+    color: v.$colorLetra2;
+    cursor: pointer;
+  }
+  &__currency {
+    background-color: transparent;
+    border-style: none;
+  }
+  &__options {
+    background-color: v.$colorPrincipal;
+  }
+}
+.main {
+  margin-bottom: 5rem;
+}
+.principal {
+  padding: 8rem 1rem 1rem 1rem;
+  @include m.desktopL {
+    padding: 9rem 0rem 1rem 0rem;
+  }
+  &__global {
+  }
+  &__subcontainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    @include m.telefonoL {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    @include m.telefonoL {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+  }
+  &__enlace {
+    text-decoration: none;
+  }
+  &__enlace:hover &__span {
+    transition-duration: 0.5s;
+    opacity: 0.9;
+  }
+  &__cards {
+    @include m.flex(column nowrap, center, center, 1rem);
+    position: relative;
+    z-index: -1;
+  }
+  &__img {
+    width: 25rem;
+    height: 25rem;
+    @include m.tablet {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__img--small {
+    @include m.telefonoL {
+      width: 10rem;
+      height: 10rem;
+    }
+    @include m.tablet {
+      width: auto;
+      height: auto;
+    }
+  }
+  &__span {
+    text-align: center;
+    font-weight: bolder;
+    color: v.$colorLetra;
+    @include m.desktop {
+      opacity: 0;
+      position: absolute;
+      color: v.$colorLetra2;
+      background-color: white;
+      padding: 2rem;
+    }
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.footer {
+  @include m.flex(column nowrap, center, center, 2rem);
+  text-align: center;
+  padding: 1rem;
+  @include m.telefonoL {
+    @include m.flex(row nowrap, center, center, 2rem);
+  }
+  &__ul {
+    padding: 0;
+    @include m.telefonoL {
+      @include m.flex(row wrap, start, center, 1rem);
+    }
+    @include m.desktop {
+      order: 2;
+    }
+  }
+  &__li {
+    margin-bottom: 1.5rem;
+    @include m.telefonoL {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    color: v.$colorLetra2;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+  &__span {
+    color: v.$colorLetra2;
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+    @include m.telefonoL {
+      padding-bottom: 0;
+    }
+    @include m.desktop {
+      order: 1;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 110.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.showmenu {
+  left: 0%;
+}
+.separator {
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.activo {
+  text-decoration: underline solid rgb(73, 73, 73);
+}
+.select {
+  color: v.$colorLetra;
+  font-weight: bolder;
+}
+.shop {
+  z-index: 0;
+}
+.session {
+  z-index: 0;
+}
+.nav__margin--bottom {
+  margin-bottom: 7rem;
+}
+.opacity {
+  background-color: rgb(255, 255, 255);
+  z-index: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+.hidden {
+  display: none;
+}

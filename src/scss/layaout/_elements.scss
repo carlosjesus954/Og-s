@@ -1,0 +1,36 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.clothes {
+  padding: 8rem 1rem 1rem 1rem;
+  @include m.flex(column wrap, center, center, 0.5rem);
+  @include m.desktopL {
+    padding: 9rem 0rem 1rem 0rem;
+
+  }
+  &__tiutlo {
+  }
+  &__global {
+    @include m.flex(column wrap, center,center,1rem);
+    @include m.desktopL {
+      @include m.flex(row wrap, center,center,1rem);
+      
+    }
+  }
+  &__link {
+    text-decoration: none;
+    max-width: 30rem
+  }
+  &__cards {
+    @include m.flex(column wrap, center, center, 0.5rem);
+  }
+  &__img {
+  }
+  &__h2 {
+    color: v.$colorLetra;
+
+  }
+  &__price {
+    color: v.$colorLetra2;
+  }
+}

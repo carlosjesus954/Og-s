@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Og's collections C.R.E.A.M.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../app/css/app.css" />
+    <script defer src="../js/app.js"></script>
+  </head>
+  <body>
+    <header class="header english">
+      <div class="header__global wrapper">
+        <div class="header__btns">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="header__toggle menu"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="header__toggle hidden close"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+          <a href="../index.html">
+            <img
+            src="../assets/logo-black.png"
+            alt="Logo Ogs"
+            class="header__logo"
+          />
+          </a>
+          
+        </div>
+        <div class="header__container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="header__toggle shop"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="header__toggle session"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <nav class="header__nav nav">
+        
+        <div class="nav__global">
+          <div class="nav__demilitador"></div>
+          <ul class="nav__ul">
+            <li class="nav__li activo">
+              <a href="../index.html" class="nav__link nav__link--bolder">Home</a>
+            </li>
+            <li class="nav__li nav__margin--top">
+              <a href="represent.html" class="nav__link">REPRESENT</a>
+            </li>
+            <li class="nav__li">
+              <a href="cream.html" class="nav__link">C.R.E.A.M.</a>
+            </li>
+            <li class="nav__li">
+              <a href="beer&churros.html" class="nav__link">BEER & CHURROS</a>
+            </li>
+            <li class="nav__li">
+              <a href="tiger.html" class="nav__link">TIGER</a>
+            </li>
+            <li class="nav__li">
+              <a href="presidente.html" class="nav__link">PRESIDENTE</a>
+            </li>
+            <li class="nav__li">
+              <a href="ogs.html" class="nav__link">OG's</a>
+            </li>
+            <li class="nav__li nav__margin--top">
+              <a href="#" class="nav__link nav__link--important">Cart</a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__link nav__link--important">Login</a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__link nav__link--important">Register</a>
+            </li>
+          </ul>
+          <div class="nav__container">
+            <div class="nav__subcontainer">
+              <span class="nav__text"
+                >Currency:
+                <select name="currency" id="currency" class="nav__currency">
+                  <option value="EUR" class="nav__options">USD</option>
+                  <option value="EUR" class="nav__options">MXN</option>
+                  <option value="EUR" class="nav__options">CLP</option>
+                  <option value="EUR" class="nav__options">COP</option>
+                  <option value="EUR" class="nav__options">EUR</option>
+                </select>
+              </span>
+            </div>
+            <div class="nav__subcontainer">
+              <span class="nav__text english select">English</span>
+              <div class="separator"></div>
+              <span class="nav__text espanol">Español</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="opacity hidden"></div>
+    </header>
+    <main class="main">
+      <section class="main__clothes clothes">
+        <h1 class="clothes__tiutlo">BEER & CHURROS</h1>
+        <div class="clothes__global">
+          <a href="#" class="clothes__link">
+            <div class="clothes__cards">
+              <img
+                src="../assets/sudadera1_beer.jpg"
+                alt="sudadera_represent1"
+                class="clothes__img"
+              />
+              <img
+                src="../assets/sudadera1_beer-hover.jpg"
+                alt="sudadera_tiger"
+                class="clothes__img--hover hidden"
+              />
+              <h2 class="clothes__h2">KOREAN BEER - Hoodie</h2>
+              <span class="clothes__price">42.99€</span>
+            </div>
+            
+          </a>
+          <a href="#" class="clothes__link">
+            <div class="clothes__cards">
+              <img
+                src="../assets/sudadera2_beer.jpg"
+                alt="sudadera_represent1"
+                class="clothes__img"
+              />
+              <img
+                src="../assets/sudadera2_beer-hover.jpg"
+                alt="sudadera_tiger"
+                class="clothes__img--hover hidden"
+              />
+              <h2 class="clothes__h2">KOREAN BEER - Sweatshirt</h2>
+              <span class="clothes__price">39.99€</span>
+            </div>
+            
+          </a>
+          <a href="#" class="clothes__link">
+            <div class="clothes__cards">
+              <img
+                src="../assets/camiseta1_beer.jpg"
+                alt="sudadera_represent1"
+                class="clothes__img"
+              />
+              <img
+                src="../assets/camiseta1_beer-hover.jpg"
+                alt="sudadera_tiger"
+                class="clothes__img--hover hidden"
+              />
+              <h2 class="clothes__h2">KOREAN BEER - T-Shirt</h2>
+              <span class="clothes__price">26.99€</span>
+            </div>
+            
+          </a>
+          <a href="#" class="clothes__link">
+            <div class="clothes__cards">
+              <img
+                src="../assets/sudadera3_beer.jpg"
+                alt="sudadera_represent1"
+                class="clothes__img"
+              />
+              <img
+                src="../assets/sudadera3_beer-hover.jpg"
+                alt="sudadera_tiger"
+                class="clothes__img--hover hidden"
+              />
+              <h2 class="clothes__h2">2 RATS 1 CHURRO - Hoodie</h2>
+              <span class="clothes__price">42.99€</span>
+            </div>
+            
+          </a>
+          <a href="#" class="clothes__link">
+            <div class="clothes__cards">
+              <img
+                src="../assets/camiseta2_beer.jpg"
+                alt="sudadera_represent1"
+                class="clothes__img"
+              />
+              <img
+                src="../assets/camiseta2_beer-hover.jpg"
+                alt="sudadera_tiger"
+                class="clothes__img--hover hidden"
+              />
+              <h2 class="clothes__h2">2 RATS 1 CHURRO - T-Shirt</h2>
+              <span class="clothes__price">26.99€</span>
+            </div>
+            
+          </a>
+          <a href="#" class="clothes__link">
+            <div class="clothes__cards">
+              <img
+                src="../assets/sudadera4_beer.jpg"
+                alt="sudadera_represent1"
+                class="clothes__img"
+              />
+              <img
+                src="../assets/sudadera4_beer-hover.jpg"
+                alt="sudadera_tiger"
+                class="clothes__img--hover hidden"
+              />
+              <h2 class="clothes__h2">2 RATS 1 CHURRO - Sweatshirt</h2>
+              <span class="clothes__price">39.99€</span>
+            </div>
+            
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__ul">
+        <li class="footer__li">
+          <a href="#" title="PÓLITICA DE ENVÍOS" class="footer__link"
+            >PÓLITICA DE ENVÍOS</a
+          >
+        </li>
+        <li class="footer__li">
+          <a href="#" title="CONTACTO" class="footer__link">CONTACTO</a>
+        </li>
+        <li class="footer__li">
+          <a href="#" title="CONDICIONES DE COMPRA" class="footer__link"
+            >CONDICIONES DE COMPRA</a
+          >
+        </li>
+        <li class="footer__li">
+          <a href="#" title="TÉRMINOS DE COMPRA" class="footer__link"
+            >TÉRMINOS DE COMPRA</a
+          >
+        </li>
+        <li class="footer__li">
+          <a href="#" title="POLÍTICA DE PRIVACIDAD" class="footer__link"
+            >POLÍTICA DE PRIVACIDAD</a
+          >
+        </li>
+        <li class="footer__li">
+          <a href="#" title="PÓLITICA DE COOKIES" class="footer__link"
+            >PÓLITICA DE COOKIES</a
+          >
+        </li>
+        <li class="footer__li">
+          <a href="#" title="LEGAL" class="footer__link">LEGAL</a>
+        </li>
+        <li class="footer__li">
+          <a href="#" title="TALLA" class="footer__link">TALLA</a>
+        </li>
+        <li class="footer__li">
+          <a href="#" title="RECOMENDACIONES DE CUIDADO" class="footer__link"
+            >RECOMENDACIONES DE CUIDADO</a
+          >
+        </li>
+      </ul>
+      <span class="footer__span">@2022. All rights reserver for Carlos J.</span>
+    </footer>
+  </body>
+</html>
