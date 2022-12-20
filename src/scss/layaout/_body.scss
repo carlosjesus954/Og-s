@@ -3,6 +3,7 @@
 
 .header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   margin-bottom: 1.5rem;
   background-color: v.$colorPrincipal;

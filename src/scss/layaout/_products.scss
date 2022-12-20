@@ -2,40 +2,28 @@
 @use "../base/mixins" as m;
 
 .section{
-    padding: 8rem 2rem 2rem 2rem;
-    z-index: -1;
-    position: relative;
+    
+    padding: 8rem 1.5rem 1.5rem 1rem;
     &__global{
-        overflow: hidden;
+
     }
     &__carrusel{
-        width: 200%;
-        
-        @include m.flex(row nowrap, space-between, center,0rem);
+
     }
     &__assets{
-        width: 100%;
-        position: relative;
-        
+
     }
     &__left{
-        position: absolute;
-        top: 50%;
         width: 1.5rem;
-        cursor: pointer;
-    }
-    &__right{
-        position: absolute;
-        top: 50%;
-        right: 0;
-        width: 1.5rem;
-        cursor: pointer;
-    }
-    &__assets--margin{
-    
     }
     &__img{
-        width: 100%;
+
+    }
+    &__right{
+        width: 1.5rem;
+    }
+    &__container{
+
     }
     &__h1{
 
@@ -58,8 +46,7 @@
     &__h2{
 
     }
-    &__a{
+    &__img--small{
 
     }
-
 }

@@ -327,6 +327,7 @@ a {
 
 .header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   margin-bottom: 1.5rem;
   background-color: #FFCC03;
@@ -715,40 +716,13 @@ body {
 }
 
 .section {
-  padding: 8rem 2rem 2rem 2rem;
-  z-index: -1;
-  position: relative;
-}
-.section__global {
-  overflow: hidden;
-}
-.section__carrusel {
-  width: 200%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0rem;
-}
-.section__assets {
-  width: 100%;
-  position: relative;
+  padding: 8rem 1.5rem 1.5rem 1rem;
 }
 .section__left {
-  position: absolute;
-  top: 50%;
   width: 1.5rem;
-  cursor: pointer;
 }
 .section__right {
-  position: absolute;
-  top: 50%;
-  right: 0;
   width: 1.5rem;
-  cursor: pointer;
-}
-.section__img {
-  width: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */
