@@ -394,7 +394,7 @@ a {
   }
 }
 .nav__demilitador {
-  background-color: transparent;
+  background-color: #FFCC03;
   width: 10rem;
   height: 5.5rem;
   z-index: 1;
