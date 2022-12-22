@@ -4,14 +4,34 @@
 .section{
     
     padding: 8rem 1.5rem 1.5rem 1.5rem;
+    @include m.desktop{
+        padding: 8rem 2.5rem 1.5rem 1.5rem;
+    }
     &__global{
-
+        margin-left: auto;
+        margin-right: auto;
+        @include m.desktop{
+               display: grid;
+    grid-template-columns: repeat(2,1fr);
+        }
     }
     &__carrusel{
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 2rem;
+        position: relative;
+        max-width: 29rem;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // gap: 2rem;
         
     }
     &__assets{
-        position: relative;
+        width: 200%;
+        @include m.flex(row nowrap, center, center,0rem)
+        // max-width: 29.9375rem;
     }
     .section__assets--margin{
         margin-bottom: 2rem;
@@ -21,9 +41,10 @@
         position: absolute;
         top: 50%;
         cursor: pointer;
+        
     }
     &__img{
-        width: 100%;
+        width: 50%;
         max-width: 30rem;
     }
     &__img--small{
@@ -36,9 +57,16 @@
         top: 50%;
         right: 0;
         cursor: pointer;
+        
     }
     &__container{
-        @include m.flex(column wrap, start, start,0rem)
+        @include m.flex(column wrap, start, start,0rem);
+        @include m.telefonoM{
+            @include m.flex(column wrap, center, center,0rem);
+        }
+        @include m.desktop{
+            @include m.flex(column wrap, start, start,0rem);
+        }
     }
     &__h1{
         font-size: 1.4rem;
@@ -82,15 +110,32 @@
         transform: rotate(45deg);
     }
     &__subcontainer{
-        @include m.flex(column nowrap, start, start, 1rem)
+        @include m.flex(column nowrap, start, start, 1rem);
+        @include m.telefonoM{
+            @include m.flex(column wrap, center, center,0rem);
+        }
+        @include m.desktop{
+            @include m.flex(column wrap, start, start,0rem);
+            padding-left: 1.5rem;
+        }
     }
     &__similar{
-        @include m.flex(row nowrap, start, start, 1rem)
+        @include m.flex(row nowrap, start, start, 1rem);
+        
     }
     &__h2{
-
+        margin-bottom: 2rem;
     }
     &__img--small{
 
     }
+}
+
+.carrusel__deslizar--derecha{
+
+}
+.wrapper2{
+    max-width: 68.25rem;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -391,8 +391,37 @@ body {
 .section {
   padding: 8rem 1.5rem 1.5rem 1.5rem;
 }
-.section__assets {
+@media screen and (min-width: 1050px) {
+  .section {
+    padding: 8rem 2.5rem 1.5rem 1.5rem;
+  }
+}
+.section__global {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1050px) {
+  .section__global {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.section__carrusel {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 2rem;
   position: relative;
+  max-width: 29rem;
+}
+.section__assets {
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
 }
 .section .section__assets--margin {
   margin-bottom: 2rem;
@@ -404,7 +433,7 @@ body {
   cursor: pointer;
 }
 .section__img {
-  width: 100%;
+  width: 50%;
   max-width: 30rem;
 }
 .section__img--small {
@@ -424,6 +453,24 @@ body {
   justify-content: start;
   align-items: start;
   gap: 0rem;
+}
+@media screen and (min-width: 510px) {
+  .section__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .section__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 0rem;
+  }
 }
 .section__h1 {
   font-size: 1.4rem;
@@ -471,12 +518,39 @@ body {
   align-items: start;
   gap: 1rem;
 }
+@media screen and (min-width: 510px) {
+  .section__subcontainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .section__subcontainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 0rem;
+    padding-left: 1.5rem;
+  }
+}
 .section__similar {
   display: flex;
   flex-flow: row nowrap;
   justify-content: start;
   align-items: start;
   gap: 1rem;
+}
+.section__h2 {
+  margin-bottom: 2rem;
+}
+.wrapper2 {
+  max-width: 68.25rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
