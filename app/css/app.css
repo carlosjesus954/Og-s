@@ -449,7 +449,7 @@ a {
 }
 .nav__text {
   font-size: 0.8rem;
-  color: rgb(75, 75, 75);
+  color: rgb(128, 128, 128);
   cursor: pointer;
 }
 .nav__currency {
@@ -542,7 +542,7 @@ a {
   .principal__span {
     opacity: 0;
     position: absolute;
-    color: rgb(75, 75, 75);
+    color: rgb(128, 128, 128);
     background-color: white;
     padding: 2rem;
   }
@@ -596,12 +596,12 @@ body {
   }
 }
 .footer__link {
-  color: rgb(75, 75, 75);
+  color: rgb(128, 128, 128);
   font-size: 0.7rem;
   cursor: pointer;
 }
 .footer__span {
-  color: rgb(75, 75, 75);
+  color: rgb(128, 128, 128);
   font-size: 0.7rem;
   padding-bottom: 1rem;
 }
@@ -717,7 +717,7 @@ body {
   color: rgb(32, 32, 32);
 }
 .clothes__price {
-  color: rgb(75, 75, 75);
+  color: rgb(128, 128, 128);
 }
 
 .section {
@@ -820,6 +820,7 @@ body {
   margin-bottom: 3rem;
   font-weight: bolder;
   max-width: 43.4375rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .section__button:active {
@@ -908,6 +909,84 @@ body {
 
 .wrapper2 {
   max-width: 68.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__h1 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.section__form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.section__complements {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  gap: 0rem;
+  width: 100%;
+  position: relative;
+}
+.section__name {
+  color: rgb(128, 128, 128);
+  position: absolute;
+  top: 0.5rem;
+}
+.section__input {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  padding: 0.5rem 0rem;
+  outline: none;
+}
+.section__forgot {
+  display: block;
+  margin-bottom: 2rem;
+  color: rgb(32, 32, 32);
+}
+.section__create {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section__span {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border-top: solid 0.0625rem rgb(128, 128, 128);
+  padding-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.section__acount {
+  color: #FFCC03;
+  border-style: none;
+  background-color: transparent;
+  border: solid 0.0625rem #FFCC03;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.section__input--focus {
+  color: rgb(177, 177, 177);
+  font-size: 0.9rem;
+  top: -1.5rem;
+  transition: all 0.5s ease;
+}
+
+.wrapper3 {
+  max-width: 46.25rem;
   margin-left: auto;
   margin-right: auto;
 }

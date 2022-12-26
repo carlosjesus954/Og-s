@@ -14,7 +14,9 @@ const arrowRight = document.querySelector(".section__right")
 const arrowLeft = document.querySelector(".section__left")
 // hover para los botones
 const sectionButton = document.querySelector(".section__button")
-// const imgProducto = document.query
+// Focus boton login
+const sectionInput = document.querySelectorAll(".section__complements")
+
 //  Funciones
 function mostrarMenu() {
   burguerBtn.classList.add("hidden");
@@ -73,7 +75,14 @@ function outButton (){
   sectionButton.classList.add("button--out");
   sectionButton.classList.remove("button--hover");
 }
-
+// botones login
+sectionInput.forEach((input) => {
+  input.addEventListener('click', (event)=>{
+    let span = input.children[0]
+    console.log(span);
+    span.classList.add('section__input--focus')
+  })
+});
 // Eventos
 burguerBtn.addEventListener("click", mostrarMenu);
 closeBtn.addEventListener("click", cerrarMenu);
