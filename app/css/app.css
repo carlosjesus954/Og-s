@@ -668,6 +668,11 @@ body {
   display: none;
 }
 
+.opacity--0 {
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
 .clothes {
   padding: 8rem 1rem 1rem 1rem;
   display: flex;
@@ -744,6 +749,7 @@ body {
 }
 .section__assets {
   width: 200%;
+  transition: all 0.5s ease;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -874,6 +880,14 @@ body {
 .section__h2 {
   margin-bottom: 2rem;
 }
+.carrusel__deslizar--derecha {
+  transform: translateX(-50%);
+}
+
+.carrusel__deslizar--izquierda {
+  transform: translateX(0%);
+}
+
 .wrapper2 {
   max-width: 68.25rem;
   margin-left: auto;

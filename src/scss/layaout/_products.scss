@@ -23,15 +23,11 @@
         margin-bottom: 2rem;
         position: relative;
         max-width: 29rem;
-        // display: grid;
-        // grid-template-columns: repeat(2, 1fr);
-        // gap: 2rem;
-        
     }
     &__assets{
         width: 200%;
+        transition: all .5s ease;
         @include m.flex(row nowrap, center, center,0rem)
-        // max-width: 29.9375rem;
     }
     .section__assets--margin{
         margin-bottom: 2rem;
@@ -131,8 +127,12 @@
     }
 }
 
-.carrusel__deslizar--derecha{
 
+.carrusel__deslizar--derecha{
+    transform: translateX(-50%);
+}
+.carrusel__deslizar--izquierda{
+    transform: translateX(0%);
 }
 .wrapper2{
     max-width: 68.25rem;
