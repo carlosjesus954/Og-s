@@ -12,6 +12,8 @@ const producto = document.querySelectorAll(".clothes__cards");
 const carruselContainer = document.querySelector(".section__assets")
 const arrowRight = document.querySelector(".section__right")
 const arrowLeft = document.querySelector(".section__left")
+// hover para los botones
+const sectionButton = document.querySelector(".section__button")
 // const imgProducto = document.query
 //  Funciones
 function mostrarMenu() {
@@ -47,7 +49,7 @@ producto.forEach((item) => {
         imagenSecundaria.classList.add('hidden');
     })
 });
-
+// carrusel
 function moverDerecha (){
   carruselContainer.classList.add("carrusel__deslizar--derecha")
   carruselContainer.classList.remove("carrusel__deslizar--izquierda")
@@ -60,8 +62,22 @@ function moverIzquierda (){
   arrowRight.classList.remove("opacity--0")
   arrowLeft.classList.add("opacity--0")
 }
+
+// Hover botones Add to cart
+
+function hoverButton (){
+  sectionButton.classList.remove("button--out");
+  sectionButton.classList.add("button--hover");
+}
+function outButton (){
+  sectionButton.classList.add("button--out");
+  sectionButton.classList.remove("button--hover");
+}
+
 // Eventos
 burguerBtn.addEventListener("click", mostrarMenu);
 closeBtn.addEventListener("click", cerrarMenu);
 arrowRight.addEventListener("click", moverDerecha);
 arrowLeft.addEventListener("click", moverIzquierda);
+sectionButton.addEventListener('mouseover', hoverButton);
+sectionButton.addEventListener('mouseout', outButton);

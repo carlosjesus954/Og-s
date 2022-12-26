@@ -79,6 +79,12 @@
         margin-bottom: 3rem;
         font-weight: bolder;
         max-width: 43.4375rem;
+        cursor: pointer;
+    }
+    &__button:active{
+        transition: all .5s ease;
+        background-color: black;
+        color: white;
     }
     &__p{
         border-top: solid 1px grey;
@@ -127,7 +133,16 @@
     }
 }
 
-
+.button--hover{
+    transition: all .5s ease;
+    background-color: black;
+    color: white;
+}
+.button--out{
+    transition: all .5s ease;
+    background-color: v.$colorPrincipal;
+    color: v.$colorLetra;
+}
 .carrusel__deslizar--derecha{
     transform: translateX(-50%);
 }
