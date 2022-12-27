@@ -7,7 +7,7 @@
     margin-bottom: 4rem;
   }
   &__form {
-    @include m.flex(column wrap, start, start, 2rem);
+    @include m.flex(column wrap, start, start, 3rem);
     margin-bottom: 2rem;
   }
   &__complements {
@@ -28,9 +28,11 @@
     padding: 0.5rem 0rem;
     outline: none;
   }
+  &__button--margin0{
+    margin-bottom: 0;
+  }
   &__forgot {
     display: block;
-    margin-bottom: 2rem;
     color: v.$colorLetra;
   }
   &__create {

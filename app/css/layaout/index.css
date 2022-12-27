@@ -595,7 +595,7 @@ body {
   flex-flow: column wrap;
   justify-content: start;
   align-items: start;
-  gap: 2rem;
+  gap: 3rem;
   margin-bottom: 2rem;
 }
 .section__complements {
@@ -620,9 +620,11 @@ body {
   padding: 0.5rem 0rem;
   outline: none;
 }
+.section__button--margin0 {
+  margin-bottom: 0;
+}
 .section__forgot {
   display: block;
-  margin-bottom: 2rem;
   color: rgb(32, 32, 32);
 }
 .section__create {

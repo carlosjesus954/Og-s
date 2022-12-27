@@ -1,21 +1,12 @@
 // Variables
-
 const burguerBtn = document.querySelector(".menu");
 const menu = document.querySelector(".nav");
 const closeBtn = document.querySelector(".close");
 const opacityDiv = document.querySelector(".opacity");
 
-//hover para los elementos de la tienda
-const producto = document.querySelectorAll(".clothes__cards");
 
-// Funcion arrows carrusel
-const carruselContainer = document.querySelector(".section__assets")
-const arrowRight = document.querySelector(".section__right")
-const arrowLeft = document.querySelector(".section__left")
 // hover para los botones
-const sectionButton = document.querySelector(".section__button")
-// Focus boton login
-const sectionInput = document.querySelectorAll(".section__complements")
+const sectionButton = document.querySelector(".section__button");
 
 //  Funciones
 function mostrarMenu() {
@@ -30,63 +21,23 @@ function cerrarMenu() {
   menu.classList.remove("showmenu");
   opacityDiv.classList.add("hidden");
 }
-//hover para los elementos de la tienda
-producto.forEach((item) => {
-    item.addEventListener('mouseover', (ele)=>{
-        console.log(item.childNodes);
-        const imagenPrincipal = item.children[0]
-        const imagenSecundaria = item.children[1]
-        console.log(imagenPrincipal);
-        console.log(imagenSecundaria);
-        imagenPrincipal.classList.add('hidden');
-        imagenSecundaria.classList.remove('hidden');
-    })
-    item.addEventListener('mouseout', (ele)=>{
-        console.log(item.childNodes);
-        const imagenPrincipal = item.children[0]
-        const imagenSecundaria = item.children[1]
-        console.log(imagenPrincipal);
-        console.log(imagenSecundaria);
-        imagenPrincipal.classList.remove('hidden');
-        imagenSecundaria.classList.add('hidden');
-    })
-});
-// carrusel
-function moverDerecha (){
-  carruselContainer.classList.add("carrusel__deslizar--derecha")
-  carruselContainer.classList.remove("carrusel__deslizar--izquierda")
-  arrowRight.classList.add("opacity--0")
-  arrowLeft.classList.remove("opacity--0")
-}
-function moverIzquierda (){
-  carruselContainer.classList.add("carrusel__deslizar--izquierda")
-  carruselContainer.classList.remove("carrusel__deslizar--derecha")
-  arrowRight.classList.remove("opacity--0")
-  arrowLeft.classList.add("opacity--0")
-}
+
 
 // Hover botones Add to cart
 
-function hoverButton (){
+function hoverButton() {
   sectionButton.classList.remove("button--out");
   sectionButton.classList.add("button--hover");
 }
-function outButton (){
+function outButton() {
   sectionButton.classList.add("button--out");
   sectionButton.classList.remove("button--hover");
 }
-// botones login
-sectionInput.forEach((input) => {
-  input.addEventListener('click', (event)=>{
-    let span = input.children[0]
-    console.log(span);
-    span.classList.add('section__input--focus')
-  })
-});
+
 // Eventos
 burguerBtn.addEventListener("click", mostrarMenu);
 closeBtn.addEventListener("click", cerrarMenu);
-arrowRight.addEventListener("click", moverDerecha);
-arrowLeft.addEventListener("click", moverIzquierda);
-sectionButton.addEventListener('mouseover', hoverButton);
-sectionButton.addEventListener('mouseout', outButton);
+sectionButton.addEventListener("mouseover", hoverButton);
+sectionButton.addEventListener("mouseout", outButton);
+
+
