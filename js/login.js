@@ -2,6 +2,8 @@
 const sectionInput = document.querySelectorAll(".section__complements");
 const ignoreElement1 = document.querySelector(".ignore-element1");
 const ignoreElement2 = document.querySelector(".ignore-element2");
+const container1 = document.querySelector(".section__complements--1")
+const container2 = document.querySelector(".section__complements--2")
 
 // botones login
 
@@ -31,5 +33,32 @@ sectionInput.forEach((input) => {
   });
 
   ignoreElement1.addEventListener("click", (ele)=>{
-    console.log("hola");
+    console.log(ele.target.value);
+    if (ele.target.value === "") {
+        const error = document.createElement('span')
+        error.textContent = "Make sure the email is valid, don't forget the '@'"
+        error.classList.add("error")
+        ignoreElement1.classList.add('section__input--red')
+        container1.appendChild(error)
+        setTimeout(() => {
+            error.remove();
+            ignoreElement1.classList.remove('section__input--red')
+        }, 3000);
+        return
+    }
+  })
+  ignoreElement2.addEventListener("click", (ele)=>{
+    console.log(ele.target.value);
+    if (ele.target.value === "") {
+        const error = document.createElement('span')
+        error.textContent = "This field cannot be empty"
+        error.classList.add("error")
+        ignoreElement2.classList.add('section__input--red')
+        container2.appendChild(error)
+        setTimeout(() => {
+            error.remove();
+            ignoreElement2.classList.remove('section__input--red')
+        }, 3000);
+        return
+    }
   })

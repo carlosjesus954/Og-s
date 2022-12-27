@@ -26,7 +26,11 @@
 .header__toggle {
   width: 1.5rem;
   height: 1.5rem;
+  fill: black;
   cursor: pointer;
+}
+.header__link {
+  text-decoration: none;
 }
 .header__logo {
   width: 3rem;
@@ -643,6 +647,7 @@ body {
   text-align: center;
 }
 .section__acount {
+  cursor: pointer;
   color: #FFCC03;
   border-style: none;
   background-color: transparent;
@@ -651,6 +656,16 @@ body {
   width: 100%;
   font-size: 1.2rem;
   font-weight: bolder;
+}
+
+.section__input--red {
+  border-bottom: 1px solid red;
+}
+
+.error {
+  margin-top: 0.4rem;
+  color: red;
+  font-size: 0.8rem;
 }
 
 .section__input--focus {

@@ -21,8 +21,11 @@
   &__toggle {
     width: 1.5rem;
     height: 1.5rem;
-
+    fill: black;
     cursor: pointer;
+  }
+  &__link{
+    text-decoration: none;
   }
   &__logo {
     width: 3rem;
@@ -113,8 +116,6 @@
   padding: 8rem 1rem 1rem 1rem;
   @include m.desktopL {
     padding: 9rem 0rem 1rem 0rem;
-  }
-  &__global {
   }
   &__subcontainer {
     display: grid;
