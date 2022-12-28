@@ -590,6 +590,9 @@ body {
   margin-right: auto;
 }
 
+.section {
+  position: relative;
+}
 .section__h1 {
   font-size: 2rem;
   margin-bottom: 4rem;
@@ -656,6 +659,28 @@ body {
   width: 100%;
   font-size: 1.2rem;
   font-weight: bolder;
+}
+
+.login--correct {
+  color: rgb(0, 255, 13);
+  font-weight: bolder;
+  font-size: 1rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.356);
+  top: 50%;
+  left: 30%;
+  padding: 1rem;
+  backdrop-filter: blur(0.0625rem);
+}
+@media screen and (min-width: 510px) {
+  .login--correct {
+    left: 35%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .login--correct {
+    left: 40%;
+  }
 }
 
 .section__input--red {

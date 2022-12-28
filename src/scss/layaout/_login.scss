@@ -2,6 +2,7 @@
 @use "../base/mixins" as m;
 
 .section {
+  position: relative;
   &__h1 {
     font-size: 2rem;
     margin-bottom: 4rem;
@@ -56,6 +57,23 @@
     width: 100%;
     font-size: 1.2rem;
     font-weight: bolder;
+  }
+}
+.login--correct{
+  color: rgb(0, 255, 13);
+  font-weight: bolder;
+  font-size: 1rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.356);
+  top: 50%;
+  left: 30%;
+  padding: 1rem;
+  backdrop-filter: blur(.0625rem);
+  @include m.telefonoM{
+    left: 35%;
+  }
+  @include m.telefonoL{
+    left: 40%;
   }
 }
 .section__input--red{
