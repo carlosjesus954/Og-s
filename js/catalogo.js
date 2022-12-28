@@ -1,3 +1,4 @@
+const producto = document.querySelectorAll(".clothes__cards");
 //hover para los elementos de la tienda
 producto.forEach((item) => {
     item.addEventListener("mouseover", (ele) => {

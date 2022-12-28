@@ -1,5 +1,5 @@
 //hover para los elementos de la tienda
-const producto = document.querySelectorAll(".clothes__cards");
+
 
 // Funcion arrows carrusel
 const carruselContainer = document.querySelector(".section__assets");
